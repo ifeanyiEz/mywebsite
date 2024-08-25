@@ -31,6 +31,7 @@ main {
     height: auto;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -41,18 +42,16 @@ main {
 
 .hero-intro {
     max-width: 80%;
-    padding: 5rem 0 5rem 0;
+    padding: 5rem 0;
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
 }
 
 .ifeanyi_4 {
     height: auto;
-    max-height: 800px;
-    width: auto;
-    max-width: 873px;
+    max-width: 100%;
     border-radius: 50%;
 }
 
@@ -80,12 +79,6 @@ main {
 .intro-text {
     font-weight: 400;
     margin-bottom: 0.2rem;
-}
-
-.name-intro {
-    font-size: 7rem;
-    text-shadow: 10px 10px 30px #000;
-    margin: 0.2rem 0 0.2rem 0;
 }
 
 .section-header {
@@ -149,6 +142,9 @@ main {
 .exp-logos {
     height: auto;
     max-height: 17rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .company-name {
@@ -190,4 +186,74 @@ footer {
     width: 100%;
     height: 400px;         /* Height of the footer */
     background: #90B2CB;
+}
+
+@media (max-width: 680px) {
+
+    html, body {
+        font-size: 12px;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .hero-intro {
+        max-width: 80%;
+        padding: 5rem 0 5rem 0;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .hello-intro {
+        order: 2;
+    }
+
+    .name-intro {
+        display: none;
+    }
+
+    .small-name-intro {
+        font-size: 7rem;
+        font-weight: 600;
+        text-shadow: 10px 10px 30px #000;
+        margin: 0.2rem 0;
+    }
+
+    .intro-text {
+        font-size: 2.5rem;
+    }
+
+    .section-header {
+        font-size: 2.5rem;
+    }
+
+    .relevant-information {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .company-name {
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .name-intro {
+        font-size: 7rem;
+        font-weight: 600;
+        text-shadow: 10px 10px 30px #000;
+        margin: 0.2rem 0;
+    }
+
+    .small-name-intro {
+        display: none;
+    }
 }
