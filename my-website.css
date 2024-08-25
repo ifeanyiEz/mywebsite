@@ -71,12 +71,18 @@ main {
     font-weight: 500;
 }
 
+.yellow-text {
+    color: rgb(224, 240, 9);
+    font-weight: 600;
+}
+
 .small-text {
     font-size: 0.8rem;
     margin: 0;
 }
 
 .intro-text {
+    font-size: 2.5rem;
     font-weight: 400;
     margin-bottom: 0.2rem;
 }
@@ -96,6 +102,7 @@ main {
 
 .section-content {
     width: 80%;
+    margin-bottom: 3rem;
 }
 
 .secton-information {
@@ -109,6 +116,13 @@ main {
     gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+.tech-information {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
 }
 
 #skills {
@@ -150,7 +164,7 @@ main {
 .company-name {
     font-size: 1.65rem;
     font-weight: 500;
-    text-align: left;
+    text-align: center;
     margin-top: 0.5rem;
     margin-bottom: 0;
 }
