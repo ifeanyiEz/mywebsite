@@ -105,7 +105,7 @@ main {
 
 .relevant-information {
     display: grid;
-    gap: 3rem;
+    gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
