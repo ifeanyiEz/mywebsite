@@ -40,6 +40,10 @@ main {
     background-color: #90B2CB;
 }
 
+#intro {
+    background-image: linear-gradient(235deg, #90B2CB, #257cb9, #0a0236);
+}
+
 .hero-intro {
     max-width: 80%;
     padding: 5rem 0;
