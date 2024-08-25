@@ -63,19 +63,27 @@ main {
     align-items: flex-start;
 }
 
+.white-text {
+    color: #ffffff;
+}
+
+.red-text {
+    color: rgb(228, 100, 10);
+    font-weight: 500;
+}
+
 .small-text {
     font-size: 0.8rem;
     margin: 0;
 }
 
 .intro-text {
+    font-weight: 400;
     margin-bottom: 0.2rem;
-    font-weight: 300;
 }
 
 .name-intro {
     font-size: 7rem;
-    color: #ffffff;
     text-shadow: 10px 10px 30px #000;
     margin: 0.2rem 0 0.2rem 0;
 }
@@ -110,12 +118,17 @@ main {
     grid-template-rows: 1fr 1fr;
 }
 
+#skills {
+    background-color: #2f7fa4;
+    background-image: linear-gradient(85deg, #076e9e, #05207a, #0a0236);
+}
+
 .skill-card {
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 10px;
-    border: 1px solid #e3e3e3;
-    box-shadow: 5px 5px 20px #e3e3e3;
-    background-color: #ffffff;
+    border: 1px solid #0b5070;
+    /* box-shadow: 2px 2px 30px #2f7fa4; */
+    background-color: #2f7fa4;
 }
 
 .skill-group {
@@ -129,7 +142,7 @@ main {
 .experience-card {
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 10px;
-    border: 1px solid #e3e3e3;
+    border: 1px solid #b1cee4;
     box-shadow: 5px 5px 20px #e3e3e3;
 }
 
