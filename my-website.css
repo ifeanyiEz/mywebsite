@@ -20,7 +20,7 @@ body {
 header {
     display: flex;
     justify-content: center;
-    background-color: #90B2CB;
+    background-color: #065186;
 }
 
 main {
@@ -30,10 +30,20 @@ main {
 .main-container {
     height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 0.5rem;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.header-message {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    order: 1;
 }
 
 .hero-bg {
@@ -49,8 +59,9 @@ main {
     padding: 5rem 0;
     display: grid;
     gap: 1rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 5fr;
     grid-template-rows: auto;
+    order: 2;
 }
 
 .ifeanyi_4 {
@@ -94,7 +105,8 @@ main {
 .section-header {
     font-size: 3.5rem;
     font-weight: 300;
-    margin-bottom: 0;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .section-subheader {
@@ -129,9 +141,15 @@ main {
     grid-template-rows: auto;
 }
 
+.tech-decoration {
+    background-color: #2f7fa4;
+    background-image: linear-gradient(225deg, #57b7e4, #208cbe, #052e86);
+    box-shadow: 10px 10px 30px #c3c3c9;
+}
+
 #skills {
     background-color: #2f7fa4;
-    background-image: linear-gradient(85deg, #076e9e, #05207a, #0a0236);
+    background-image: linear-gradient(85deg, #076e9e, #1356ad, #1d46cc);
 }
 
 .skill-card {
@@ -140,6 +158,13 @@ main {
     border: 1px solid #0b5070;
     /* box-shadow: 2px 2px 30px #2f7fa4; */
     background-color: #2f7fa4;
+}
+
+.tech-decoration {
+    border: #57b7e4;
+    background-color: #2f7fa4;
+    background-image: linear-gradient(225deg, #57b7e4, #208cbe, #052e86);
+    box-shadow: 10px 10px 30px #c3c3c9;
 }
 
 .skill-group {
@@ -206,6 +231,8 @@ footer {
     background: #90B2CB;
 }
 
+/* For devices with very small screens*/
+
 @media (max-width: 680px) {
 
     html, body {
@@ -224,7 +251,7 @@ footer {
         display: grid;
         gap: 1rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 4fr 3fr;
     }
 
     .hello-intro {
@@ -232,6 +259,10 @@ footer {
     }
 
     .name-intro {
+        display: none;
+    }
+
+    .mid-name-intro {
         display: none;
     }
 
@@ -270,12 +301,101 @@ footer {
 
 }
 
-@media (min-width: 1440px) {
+/* For devices with small screens */
+
+@media (min-width: 680px) and (max-width: 920px) {
+    html,
+    body {
+        font-size: 12px;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .hero-intro {
+        max-width: 80%;
+        padding: 5rem 0 5rem 0;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 2fr;
+    }
+
+    .hello-intro {
+        order: 2;
+    }
+
+    .name-intro {
+        display: none;
+    }
+
+    .mid-name-intro {
+        font-size: 6rem;
+        font-weight: 600;
+        text-shadow: 10px 10px 30px #000;
+        margin: 0.2rem 0;
+    }
+
+    .small-name-intro {
+        display: none;
+        font-size: 6rem;
+        font-weight: 600;
+        text-shadow: 10px 10px 30px #000;
+        margin: 0.2rem 0;
+    }
+
+    .intro-text {
+        font-size: 2.5rem;
+    }
+
+    .section-header {
+        font-size: 2.5rem;
+    }
+
+    .relevant-information {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .tech-information {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .company-name {
+        text-align: center;
+    }
+
+
+}
+
+@media (min-width: 1440px) and (max-width: 1680) {
+
+    html,
+    body {
+        font-size: 16px;
+    }
+
+    .hello-intro {
+        order: 2;
+    }
+
     .name-intro {
         font-size: 7rem;
         font-weight: 600;
         text-shadow: 10px 10px 30px #000;
         margin: 0.2rem 0;
+    }
+
+    .mid-name-intro {
+        display: none;
     }
 
     .small-name-intro {
