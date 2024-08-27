@@ -38,7 +38,7 @@ main {
 }
 
 .header-message {
-    font-size: 1.8rem;
+    font-size: 3.5rem;
     font-weight: 300;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -245,6 +245,10 @@ footer {
         flex-wrap: wrap;
     }
 
+    .header-message {
+        font-size: 1.8rem;
+    }
+
     .hero-intro {
         max-width: 80%;
         padding: 5rem 0 5rem 0;
@@ -313,6 +317,10 @@ footer {
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
+    }
+
+    .header-message {
+        font-size: 2.5rem;
     }
 
     .hero-intro {
