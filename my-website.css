@@ -129,7 +129,7 @@ main {
 
 .relevant-information {
     display: grid;
-    gap: 4rem;
+    gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
@@ -175,8 +175,13 @@ main {
     margin-bottom: 0;
 }
 
+.skill-text {
+    font-size: 1.0rem;
+    margin: 0.2rem 0 0.1rem 0;
+}
+
 .experience-card {
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 2rem;
     border-radius: 10px;
     border: 1px solid #f3efef;
     box-shadow: 2px 2px 20px #e3e3e3;
@@ -211,7 +216,7 @@ main {
 }
 
 .exp-text {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 0.2rem 0 0.1rem 0;
 }
 
