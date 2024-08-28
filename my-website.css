@@ -24,7 +24,7 @@ header {
 }
 
 main {
-    padding-bottom: 400px; /* Height of the footer */
+    padding-bottom: 25rem; /* Height of the footer */
 }
 
 .main-container {
@@ -81,14 +81,14 @@ main {
     color: #ffffff;
 }
 
-.red-text {
-    color: rgb(228, 100, 10);
-    font-weight: 500;
+.blue-text {
+    color: rgb(10, 25, 228);
+    font-weight: 700;
 }
 
 .yellow-text {
-    color: rgb(224, 240, 9);
-    font-weight: 600;
+    color: rgb(240, 217, 9);
+    font-weight: 700;
 }
 
 .small-text {
@@ -99,7 +99,7 @@ main {
 .intro-text {
     font-size: 2.5rem;
     font-weight: 400;
-    margin-bottom: 0.2rem;
+    margin: 0.2rem 0;
 }
 
 .section-header {
@@ -124,7 +124,7 @@ main {
 .secton-information {
     height: auto;
     min-width: 80%;
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0;
 }
 
 .relevant-information {
@@ -149,15 +149,15 @@ main {
 
 #skills {
     background-color: #2f7fa4;
-    background-image: linear-gradient(85deg, #076e9e, #1356ad, #1d46cc);
+    background-image: linear-gradient(235deg, #0a0236, #0b5f9b, #208cbe);
 }
 
 .skill-card {
-    padding: 1rem 2rem 1rem 2rem;
-    border-radius: 10px;
+    padding: 1rem 2rem;
     border: 1px solid #0b5070;
+    border-radius: 10px;
     /* box-shadow: 2px 2px 30px #2f7fa4; */
-    background-color: #2f7fa4;
+    background-color: #0b459b;
 }
 
 .tech-decoration {
@@ -227,8 +227,36 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 400px;         /* Height of the footer */
+    height: 25rem;         /* Height of the footer */
     background: #90B2CB;
+}
+
+.footer-background {
+    background-image: linear-gradient(215deg, #1476bd, #145dbd, #0820a8, #0c0341);
+}
+
+.footer-information {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.footer-card {
+    padding: 0.5rem 0;
+}
+
+.footer-group {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-text {
+    font-size: 0.95rem;
+    margin: 0.4rem 0 0.1rem 0;
 }
 
 /* For devices with very small screens*/
@@ -237,6 +265,11 @@ footer {
 
     html, body {
         font-size: 12px;
+    }
+
+    main {
+        padding-bottom: 147rem;
+        /* Height of the footer */
     }
 
     .main-container {
@@ -251,14 +284,18 @@ footer {
 
     .hero-intro {
         max-width: 80%;
-        padding: 5rem 0 5rem 0;
+        padding: 5rem 0;
         display: grid;
         gap: 1rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 4fr 3fr;
+        grid-template-rows: 4fr 2fr;
     }
 
     .hello-intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         order: 2;
     }
 
@@ -303,6 +340,28 @@ footer {
         text-align: center;
     }
 
+
+    .footer-information {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .footer-group {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-text {
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 0.4rem 0 0.1rem 0;
+    }
+
 }
 
 /* For devices with small screens */
@@ -325,14 +384,18 @@ footer {
 
     .hero-intro {
         max-width: 80%;
-        padding: 5rem 0 5rem 0;
+        padding: 5rem 0;
         display: grid;
         gap: 1rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 3fr 2fr;
+        grid-template-rows: 3fr 1fr;
     }
 
     .hello-intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         order: 2;
     }
 
@@ -384,6 +447,8 @@ footer {
 
 }
 
+/*For devices with extra large screens*/
+
 @media (min-width: 1440px) and (max-width: 1680) {
 
     html,
@@ -409,4 +474,35 @@ footer {
     .small-name-intro {
         display: none;
     }
+}
+
+/* For devices with extra extra large screens */
+
+@media (min-width: 1680px) {
+
+    .hero-intro {
+        max-width: 80%;
+        padding: 5rem 0;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 4fr 4fr;
+        grid-template-rows: auto;
+        order: 2;
+    }
+
+    .name-intro {
+        font-size: 7rem;
+        font-weight: 600;
+        text-shadow: 10px 10px 30px #000;
+        margin: 0.2rem 0;
+    }
+
+    .mid-name-intro {
+        display: none;
+    }
+
+    .small-name-intro {
+        display: none;
+    }
+
 }
