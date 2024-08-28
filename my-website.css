@@ -129,14 +129,14 @@ main {
 
 .relevant-information {
     display: grid;
-    gap: 2rem;
+    gap: 4rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
 .tech-information {
     display: grid;
-    gap: 2rem;
+    gap: 4rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
 }
@@ -168,7 +168,7 @@ main {
 }
 
 .skill-group {
-    font-size: 1.65rem;
+    font-size: 1.4rem;
     font-weight: 500;
     text-align: left;
     margin-top: 0.5rem;
@@ -178,20 +178,20 @@ main {
 .experience-card {
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 10px;
-    border: 1px solid #b1cee4;
-    box-shadow: 5px 5px 20px #e3e3e3;
+    border: 1px solid #f3efef;
+    box-shadow: 2px 2px 20px #e3e3e3;
 }
 
 .exp-logos {
     height: auto;
-    max-height: 17rem;
+    max-height: 13rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .company-name {
-    font-size: 1.65rem;
+    font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
     margin-top: 0.5rem;
@@ -211,7 +211,7 @@ main {
 }
 
 .exp-text {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0.2rem 0 0.1rem 0;
 }
 
@@ -242,20 +242,31 @@ footer {
     grid-template-rows: auto;
 }
 
+.footer-content {
+    width: 80%;
+}
+
 .footer-card {
     padding: 0.5rem 0;
 }
 
 .footer-group {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 300;
+    font-stretch: narrower;
     text-align: left;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
 }
 
 .footer-text {
+    font-size: 0.85rem;
+    margin: 0.4rem 0 0.1rem 0;
+}
+
+.footer-sign-off {
     font-size: 0.95rem;
+    text-align: center;
     margin: 0.4rem 0 0.1rem 0;
 }
 
@@ -268,7 +279,7 @@ footer {
     }
 
     main {
-        padding-bottom: 135rem;
+        padding-bottom: 136rem;
         /* Height of the footer */
     }
 
@@ -357,7 +368,7 @@ footer {
     }
 
     .footer-text {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: center;
         margin: 0.4rem 0 0.1rem 0;
     }
@@ -370,6 +381,11 @@ footer {
     html,
     body {
         font-size: 12px;
+    }
+
+    main {
+        padding-bottom: 66rem;
+        /* Height of the footer */
     }
 
     .main-container {
@@ -442,6 +458,27 @@ footer {
 
     .company-name {
         text-align: center;
+    }
+
+    .footer-information {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .footer-group {
+        font-size: 1.6rem;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-text {
+        font-size: 1rem;
+        text-align: center;
+        margin: 0.4rem 0 0.1rem 0;
     }
 
 
