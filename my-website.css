@@ -18,9 +18,13 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     background-color: #065186;
+    z-index: 1000;
 }
 
 main {
@@ -75,6 +79,29 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+.hero-button {
+    margin: 1rem 0 0 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.button {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.55rem 1rem;
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.button :hover {
+    background-color: #2980b9;
 }
 
 .white-text {
@@ -189,7 +216,7 @@ main {
 
 .exp-logos {
     height: auto;
-    max-height: 11rem;
+    max-height: 13rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -226,6 +253,16 @@ main {
 
 .link-resume {
     text-decoration: none;
+}
+
+.menu-list {
+    font-size: 1.2rem;
+    list-style-type: none;
+    padding: 16px 0;
+    margin: 0;
+    display: grid;
+    gap: 0.6rem;
+    grid-auto-flow: column;
 }
 
 footer {
