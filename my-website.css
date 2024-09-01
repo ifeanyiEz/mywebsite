@@ -120,7 +120,7 @@ main {
 }
 
 .blue-text {
-    color: rgb(10, 25, 228);
+    color: #008EE6;
     font-weight: 700;
 }
 
@@ -132,6 +132,13 @@ main {
 .small-text {
     font-size: 0.8rem;
     margin: 0;
+}
+
+.caps-text {
+    color: #1476bd;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem 0;
 }
 
 .not-small-text {
@@ -151,6 +158,10 @@ main {
     font-weight: 300;
     margin-top: 15px;
     margin-bottom: 5px;
+}
+
+.bold-text {
+    font-weight: 500;
 }
 
 .section-ad {
@@ -176,6 +187,7 @@ main {
     height: auto;
     min-width: 80%;
     padding: 2rem 0;
+    margin-bottom: 2rem;
 }
 
 .relevant-information {
@@ -205,17 +217,12 @@ main {
     box-shadow: 10px 10px 30px #c3c3c9;
 }
 
-#skills {
-    background-color: #2f7fa4;
-    background-image: linear-gradient(235deg, #0a0236, #0b5f9b, #208cbe);
-}
-
 .skill-card {
     padding: 1rem 2rem;
     border: 1px solid #0b5070;
     border-radius: 10px;
     /* box-shadow: 2px 2px 30px #2f7fa4; */
-    background-color: #0b459b;
+    background-color: #1d5dbe;
 }
 
 .tech-decoration {
@@ -233,8 +240,17 @@ main {
     margin-bottom: 0;
 }
 
+.bold-skill {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.skill-list {
+    padding-left: 20px;
+}
+
 .skill-text {
-    font-size: 1.0rem;
+    font-size: 1.2rem;
     margin: 0.2rem 0 0.1rem 0;
 }
 
@@ -247,7 +263,7 @@ main {
 
 .exp-logos {
     height: auto;
-    max-height: 13rem;
+    max-height: 6rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -255,10 +271,9 @@ main {
 
 .company-name {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;
-    margin-top: 0.5rem;
-    margin-bottom: 0;
+    margin: 1rem 0;
 }
 
 .section-divide {
@@ -274,8 +289,9 @@ main {
 }
 
 .exp-text {
-    font-size: 1.5rem;
-    margin: 0.2rem 0 0.1rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem 0;
 }
 
 .exp-role {
@@ -348,7 +364,7 @@ footer {
 @media (max-width: 680px) {
 
     html, body {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     main {
@@ -465,7 +481,7 @@ footer {
 @media (min-width: 680px) and (max-width: 920px) {
     html,
     body {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     main {
@@ -733,21 +749,41 @@ footer {
 
 /* For devices with extra extra large screens */
 
-@media (min-width: 1680px) {
+@media (min-width: 1680px) and (max-width: 1920px) {
+
+    .menu-list {
+        font-size: 1.5rem;
+    }
 
     .hero-intro {
         max-width: 80%;
         padding: 5rem 0;
         display: grid;
         gap: 1rem;
-        grid-template-columns: 4fr 4fr;
-        grid-template-rows: auto;
-        order: 2;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .ifeanyi_4 {
+        display: none;
+    }
+
+    .m-background {
+        background-size: contain;
+        background-image: url(./assets/ifeanyi_4.1.png);
+    }
+
+    .section-content {
+        max-width: 80%;
+    }
+
+    .section-header {
+        font-size: 4rem;
     }
 
     .name-intro {
-        font-size: 7rem;
-        font-weight: 600;
+        font-size: 10rem;
+        font-weight: 400;
         text-shadow: 10px 10px 30px #000;
         margin: 0.2rem 0;
     }
@@ -758,6 +794,10 @@ footer {
 
     .small-name-intro {
         display: none;
+    }
+
+    .button {
+        font-size: 1.5rem;
     }
 
 }
