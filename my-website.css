@@ -41,6 +41,16 @@ main {
     align-items: center;
 }
 
+.m-background {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    background-image: url(./assets/m_ifeanyi_4.png);
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
 .header-message {
     font-size: 3.5rem;
     font-weight: 300;
@@ -55,6 +65,7 @@ main {
 }
 
 #intro {
+    width: 100%;
     background-image: linear-gradient(235deg, #90B2CB, #257cb9, #0a0236);
 }
 
@@ -82,7 +93,7 @@ main {
 }
 
 .hero-button {
-    margin: 1rem 0 0 0;
+    margin: 10rem 0 0 0;
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr;
@@ -95,13 +106,13 @@ main {
     padding: 0.55rem 1rem;
     text-align: center;
     border: 1px solid #ffffff;
-    border-radius: 0.5rem;
+    border-radius: 0.8rem;
     color: #ffffff;
     background-color: transparent;
 }
 
 .button :hover {
-    background-color: #2980b9;
+    background-color: #1f1203;
 }
 
 .white-text {
@@ -123,6 +134,12 @@ main {
     margin: 0;
 }
 
+.not-small-text {
+    display: none;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
 .intro-text {
     font-size: 2.5rem;
     font-weight: 400;
@@ -131,6 +148,13 @@ main {
 
 .section-header {
     font-size: 3.5rem;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.section-ad {
+    font-size: 4.5rem;
     font-weight: 300;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -165,6 +189,13 @@ main {
     display: grid;
     gap: 4rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.about-information {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
 }
 
@@ -325,10 +356,18 @@ footer {
         /* Height of the footer */
     }
 
+    .hero-bg {
+        padding-top: 4rem;
+    }
+
     .main-container {
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
+    }
+
+    .ifeanyi_4 {
+        display: none;
     }
 
     .header-message {
@@ -341,7 +380,7 @@ footer {
         display: grid;
         gap: 1rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 4fr 2fr;
+        grid-template-rows: auto;
     }
 
     .hello-intro {
@@ -361,8 +400,8 @@ footer {
     }
 
     .small-name-intro {
-        font-size: 6rem;
-        font-weight: 600;
+        font-size: 7rem;
+        font-weight: 400;
         text-shadow: 10px 10px 30px #000;
         margin: 0.2rem 0;
     }
@@ -372,7 +411,11 @@ footer {
     }
 
     .section-header {
-        font-size: 2.5rem;
+        font-size: 3rem;
+    }
+
+    .button {
+        font-size: 1rem;
     }
 
     .relevant-information {
@@ -430,10 +473,22 @@ footer {
         /* Height of the footer */
     }
 
+    .hero-bg {
+        padding-top: 4rem;
+    }
+
     .main-container {
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
+    }
+
+    .m-background {
+        background-size: contain;
+    }
+
+    .ifeanyi_4 {
+        display: none;
     }
 
     .header-message {
@@ -446,7 +501,7 @@ footer {
         display: grid;
         gap: 1rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 3fr 1fr;
+        grid-template-rows: auto;
     }
 
     .hello-intro {
@@ -462,18 +517,14 @@ footer {
     }
 
     .mid-name-intro {
-        font-size: 6rem;
-        font-weight: 600;
+        font-size: 8rem;
+        font-weight: 400;
         text-shadow: 10px 10px 30px #000;
         margin: 0.2rem 0;
     }
 
     .small-name-intro {
         display: none;
-        font-size: 6rem;
-        font-weight: 600;
-        text-shadow: 10px 10px 30px #000;
-        margin: 0.2rem 0;
     }
 
     .intro-text {
@@ -481,7 +532,11 @@ footer {
     }
 
     .section-header {
-        font-size: 2.5rem;
+        font-size: 4rem;
+    }
+
+    .button {
+        font-size: 1.5rem;
     }
 
     .relevant-information {
@@ -526,22 +581,42 @@ footer {
 
 }
 
-/*For devices with extra large screens*/
+/* For devices with medium-sized screens */
 
-@media (min-width: 1440px) and (max-width: 1680) {
+@media (min-width: 920px) and (max-width: 1200px) {
 
-    html,
-    body {
-        font-size: 16px;
+    html, body {
+        font-size: 14px;
     }
 
-    .hello-intro {
-        order: 2;
+    main {
+        padding-bottom: 40rem;
+        /* Height of the footer */
+    }
+
+    .hero-bg {
+        padding-top: 3rem;
+    }
+
+    .m-background {
+        background-size: contain;
+        background-image: url(./assets/ifeanyi_4.1.png);
+    }
+
+    .ifeanyi_4 {
+        display: none;
+    }
+
+    .hero-intro {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
 
     .name-intro {
-        font-size: 7rem;
-        font-weight: 600;
+        font-size: 8.5rem;
+        font-weight: 400;
         text-shadow: 10px 10px 30px #000;
         margin: 0.2rem 0;
     }
@@ -552,6 +627,107 @@ footer {
 
     .small-name-intro {
         display: none;
+    }
+
+    .button {
+        font-size: 1.25rem;
+    }
+
+    .relevant-information {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .tech-information {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .company-name {
+        text-align: center;
+    }
+
+    .footer-information {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+/*For devices with extra large screens*/
+
+@media (min-width: 1440px) and (max-width: 1680px) {
+
+    html,
+    body {
+        font-size: 16px;
+    }
+
+    .main-container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-intro {
+        max-width: 80%;
+        padding: 5rem 0;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .hello-intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .name-intro {
+        font-size: 9rem;
+        font-weight: 400;
+        text-shadow: 10px 10px 30px #000;
+        margin: 0.5rem 0;
+    }
+
+    .m-background {
+        /* background-image: none; */
+        background-size: contain;
+        background-image: url(./assets/ifeanyi_4.1.png);
+    }
+
+    .ifeanyi_4 {
+        display: none;
+        height: auto;
+        max-width: 100%;
+        border-radius: 50%;
+    }
+
+    .mid-name-intro {
+        display: none;
+    }
+
+    .small-name-intro {
+        display: none;
+    }
+
+    .hero-button {
+        margin-top: 5rem;
+    }
+
+    .button {
+        font-size: 1.25rem;
     }
 }
 
