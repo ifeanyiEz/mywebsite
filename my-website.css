@@ -465,7 +465,7 @@ footer {
 @media (min-width: 680px) and (max-width: 920px) {
     html,
     body {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     main {
