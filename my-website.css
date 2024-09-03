@@ -206,7 +206,31 @@ main {
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
+}
+
+.about-content {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 0.5rem 0;
+}
+
+.about-logo {
+    float: right;
+}
+
+.text-margin-top {
+ margin-top: 1.5rem;   
 }
 
 .tech-decoration {
@@ -447,6 +471,13 @@ footer {
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 
+    .about-information {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
     .company-name {
         text-align: center;
     }
@@ -568,6 +599,13 @@ footer {
         grid-template-rows: 1fr 1fr;
     }
 
+    .about-information {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
     .company-name {
         text-align: center;
     }
@@ -664,6 +702,13 @@ footer {
         display: grid;
         gap: 2rem;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .about-information {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
 
