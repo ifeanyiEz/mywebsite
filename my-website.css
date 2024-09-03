@@ -109,6 +109,16 @@ main {
     background-color: transparent;
 }
 
+.about-button {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0.1rem 1rem 0.3rem 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    color: #ffffff;
+    background-color: #2749e0;
+}
+
 .button :hover {
     background-color: #1f1203;
 }
@@ -204,15 +214,16 @@ main {
 
 .about-information {
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
 .about-content {
     max-width: 90%;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -473,7 +484,7 @@ footer {
 
     .about-information {
         display: grid;
-        gap: 2rem;
+        gap: 1rem;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
@@ -601,7 +612,7 @@ footer {
 
     .about-information {
         display: grid;
-        gap: 2rem;
+        gap: 1rem;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
@@ -707,7 +718,7 @@ footer {
 
     .about-information {
         display: grid;
-        gap: 2rem;
+        gap: 1rem;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
@@ -898,7 +909,7 @@ footer {
 
     .name-intro {
         max-width: 70%;
-        font-size: 10rem;
+        font-size: 9rem;
         font-weight: 400;
         text-shadow: 10px 10px 30px #000;
         margin: 0.5rem 0;
