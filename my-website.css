@@ -113,10 +113,11 @@ main {
     font-size: 1.5rem;
     font-weight: 300;
     padding: 0.1rem 1rem 0.3rem 1rem;
+    margin-top: 1rem;
     text-align: center;
     border-radius: 1rem;
     color: #ffffff;
-    background-color: #2749e0;
+    background-color: #0d65b8;
 }
 
 .button :hover {
@@ -161,10 +162,17 @@ main {
     margin: 0.2rem 0;
 }
 
-.section-header {
+.my-title {
     font-size: 3.5rem;
     font-weight: 300;
     margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.section-header {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-top: 3.5rem;
     margin-bottom: 5px;
 }
 
@@ -188,7 +196,7 @@ main {
 
 .section-content {
     width: 80%;
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
 }
 
 .secton-information {
@@ -207,7 +215,7 @@ main {
 
 .tech-information {
     display: grid;
-    gap: 4rem;
+    gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
 }
@@ -233,7 +241,7 @@ main {
 .about-text {
     font-size: 1.5rem;
     text-align: justify;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
 }
 
 .about-logo {
@@ -241,7 +249,7 @@ main {
 }
 
 .text-margin-top {
- margin-top: 1.5rem;   
+ margin-top: 1rem;   
 }
 
 .tech-decoration {
@@ -461,7 +469,7 @@ footer {
     }
 
     .section-header {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
 
     .button {
@@ -476,17 +484,8 @@ footer {
     }
 
     .tech-information {
-        display: grid;
-        gap: 2rem;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-
-    .about-information {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
     }
 
     .company-name {
@@ -588,10 +587,6 @@ footer {
         font-size: 2.5rem;
     }
 
-    .section-header {
-        font-size: 4rem;
-    }
-
     .button {
         font-size: 1.5rem;
     }
@@ -604,16 +599,7 @@ footer {
     }
 
     .tech-information {
-        display: grid;
-        gap: 2rem;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .about-information {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
 
@@ -710,16 +696,7 @@ footer {
     }
 
     .tech-information {
-        display: grid;
-        gap: 2rem;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .about-information {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
 
