@@ -51,6 +51,46 @@ main {
     background-repeat: no-repeat;
 }
 
+.p_background {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    background-image: linear-gradient(225deg, #0dcbec4d, #0f62ce4d, #052e86), url(./assets/Python_logo.png);
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.f_background {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    background-image: linear-gradient(225deg, #0dcbec4d, #0f62ce4d, #052e86), url(./assets/flask_logo.png);
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.ad_background {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    background-image: linear-gradient(225deg, #0dcbec4d, #0f62ce4d, #052e86), url(./assets/api-dev.png);
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.at_background {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    background-image: linear-gradient(225deg, #0dcbec4d, #0f62ce4d, #052e86), url(./assets/api-testing.png);
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
 .header-message {
     font-size: 3.5rem;
     font-weight: 300;
@@ -228,9 +268,6 @@ main {
 }
 
 .about-content {
-    max-width: 90%;
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
@@ -252,24 +289,15 @@ main {
  margin-top: 1rem;   
 }
 
-.tech-decoration {
-    background-color: #2f7fa4;
-    background-image: linear-gradient(225deg, #57b7e4, #208cbe, #052e86);
-    box-shadow: 10px 10px 30px #c3c3c9;
-}
-
 .skill-card {
     padding: 1rem 2rem;
     border: 1px solid #0b5070;
     border-radius: 10px;
-    /* box-shadow: 2px 2px 30px #2f7fa4; */
     background-color: #1d5dbe;
 }
 
 .tech-decoration {
     border: #57b7e4;
-    background-color: #2f7fa4;
-    background-image: linear-gradient(225deg, #57b7e4, #208cbe, #052e86);
     box-shadow: 10px 10px 30px #c3c3c9;
 }
 
@@ -469,7 +497,7 @@ footer {
     }
 
     .my-title {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     .section-header {
@@ -753,7 +781,7 @@ footer {
 
     .name-intro {
         max-width: 70%;
-        font-size: 9rem;
+        font-size: 8rem;
         font-weight: 400;
         text-shadow: 10px 10px 30px #000;
         margin: 0.5rem 0;
@@ -773,6 +801,10 @@ footer {
         max-width: 80%;
     }
 
+    .my-title {
+        font-size: 3rem;
+    }
+
     .section-header {
         font-size: 4rem;
     }
@@ -790,7 +822,7 @@ footer {
     }
 
     .button {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 }
 
