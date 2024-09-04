@@ -346,7 +346,7 @@ main {
 .menu-list {
     font-size: 1.2rem;
     list-style-type: none;
-    padding: 16px 0;
+    padding: 1rem 0;
     margin: 0;
     display: grid;
     gap: 0.6rem;
