@@ -550,7 +550,7 @@ footer {
 
 /* For devices with small screens */
 
-@media (min-width: 680px) and (max-width: 920px) {
+@media (min-width: 681px) and (max-width: 920px) {
     html,
     body {
         font-size: 12px;
@@ -665,7 +665,7 @@ footer {
 
 /* For devices with medium-sized screens */
 
-@media (min-width: 920px) and (max-width: 1200px) {
+@media (min-width: 921px) and (max-width: 1200px) {
 
     html, body {
         font-size: 14px;
@@ -746,7 +746,7 @@ footer {
 
 /*For devices with extra large screens*/
 
-@media (min-width: 1440px) and (max-width: 1680px) {
+@media (min-width: 1441px) and (max-width: 1680px) {
 
     html,
     body {
@@ -828,7 +828,7 @@ footer {
 
 /* For devices with extra extra large screens */
 
-@media (min-width: 1680px) and (max-width: 1920px) {
+@media (min-width: 1681px) and (max-width: 1920px) {
 
     html,
     body {
@@ -897,7 +897,7 @@ footer {
 
 /* For devices such as large desktops and TV screens */
 
-@media (min-width: 1920px) {
+@media (min-width: 1921px) {
 
     html,
     body {
