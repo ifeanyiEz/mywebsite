@@ -28,7 +28,7 @@ header {
 }
 
 main {
-    padding-bottom: 25rem; /* Height of the footer */
+    padding-bottom: 26rem; /* Height of the footer */
 }
 
 .main-container {
@@ -46,7 +46,7 @@ main {
     width: auto;
     max-width: 100%;
     background-image: url(./assets/m_ifeanyi_4.png);
-    background-size: cover;
+    /* background-size: cover; */
     background-position: bottom right;
     background-repeat: no-repeat;
 }
@@ -91,6 +91,16 @@ main {
     background-repeat: no-repeat;
 }
 
+.fe_background {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    background-image: linear-gradient(225deg, #0dcbec4d, #0f62ce4d, #052e86), url(./assets/mybootstrap.png);
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
 .header-message {
     font-size: 3.5rem;
     font-weight: 300;
@@ -110,7 +120,7 @@ main {
 }
 
 .hero-intro {
-    padding: 5rem 0;
+    padding: 2rem 0;
     display: grid;
     gap: 1rem;
     grid-template-columns: 3fr 5fr;
@@ -257,6 +267,13 @@ main {
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.edu-information {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
 }
 
@@ -393,6 +410,13 @@ footer {
     background-image: linear-gradient(215deg, #1476bd, #145dbd, #0820a8, #0c0341);
 }
 
+.footer-secton {
+    height: auto;
+    min-width: 80%;
+    padding: 2rem 0 0.5rem 0;
+    margin-bottom: 0.5rem;
+}
+
 .footer-information {
     display: grid;
     gap: 1rem;
@@ -437,12 +461,17 @@ footer {
     }
 
     main {
-        padding-bottom: 122rem;
+        padding-bottom: 130rem;
         /* Height of the footer */
     }
 
     .hero-bg {
         padding-top: 4rem;
+    }
+
+    .m-background {
+      background-size: cover;
+
     }
 
     .main-container {
@@ -461,7 +490,7 @@ footer {
 
     .hero-intro {
         max-width: 90%;
-        padding: 5rem 0;
+        padding: 8rem 0;
         display: grid;
         gap: 1rem;
         grid-template-columns: 1fr;
@@ -516,6 +545,11 @@ footer {
     }
 
     .tech-information {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .edu-information {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
@@ -619,6 +653,10 @@ footer {
         font-size: 2.5rem;
     }
 
+    .hero-button {
+        margin: 6rem 0 0 0;
+    }
+
     .button {
         font-size: 1.5rem;
     }
@@ -631,6 +669,11 @@ footer {
     }
 
     .tech-information {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .edu-information {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
@@ -672,7 +715,7 @@ footer {
     }
 
     main {
-        padding-bottom: 40rem;
+        padding-bottom: 42rem;
         /* Height of the footer */
     }
 
@@ -732,6 +775,11 @@ footer {
         grid-template-rows: 1fr 1fr;
     }
 
+    .edu-information {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
     .company-name {
         text-align: center;
     }
@@ -744,7 +792,94 @@ footer {
     }
 }
 
-/*For devices with extra large screens*/
+/*For devices with large screens*/
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+
+    html,
+    body {
+        font-size: 15px;
+    }
+
+    main {
+        padding-bottom: 42rem;
+        /* Height of the footer */
+    }
+
+    .menu-list {
+        font-size: 1.5rem;
+    }
+
+    .hero-intro {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .m-background {
+        padding-top: 3rem;
+        background-size: contain;
+        background-image: url(./assets/ifeanyi_4.2.png);
+    }
+
+    .ifeanyi_4 {
+        display: none;
+    }
+
+    .name-intro {
+        max-width: 70%;
+        font-size: 7rem;
+        font-weight: 400;
+        text-shadow: 10px 10px 30px #000;
+        margin: 0.5rem 0;
+    }
+
+    .mid-name-intro {
+        display: none;
+    }
+
+    .small-name-intro {
+        display: none;
+    }
+
+    .hero-button {
+        margin-top: 5rem;
+    }
+
+    .button {
+        font-size: 1.25rem;
+    }
+
+    .relevant-information {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .tech-information {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .edu-information {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .company-name {
+        text-align: center;
+    }
+
+    .footer-information {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+}
+
+/*For devices with very large screens*/
 
 @media (min-width: 1441px) and (max-width: 1680px) {
 
@@ -818,7 +953,7 @@ footer {
     }
 
     .hero-button {
-        margin-top: 5rem;
+        margin-top: 4rem;
     }
 
     .button {
@@ -826,7 +961,7 @@ footer {
     }
 }
 
-/* For devices with extra extra large screens */
+/* For devices with extra large screens */
 
 @media (min-width: 1681px) and (max-width: 1920px) {
 
@@ -853,7 +988,7 @@ footer {
 
     .name-intro {
         max-width: 70%;
-        font-size: 9rem;
+        font-size: 10rem;
         font-weight: 400;
         text-shadow: 10px 10px 30px #000;
         margin: 0.5rem 0;
@@ -865,7 +1000,7 @@ footer {
 
     .m-background {
         padding-top: 3rem;
-        background-size: contain;
+        /* background-size: contain; */
         background-image: url(./assets/ifeanyi_4.2.png);
     }
 
@@ -886,7 +1021,7 @@ footer {
     }
 
     .hero-button {
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
 
     .button {
@@ -895,7 +1030,7 @@ footer {
 
 }
 
-/* For devices such as large desktops and TV screens */
+/* For devices with extra extra large screens, such as desktops and TV screens */
 
 @media (min-width: 1921px) {
 
@@ -922,7 +1057,7 @@ footer {
 
     .name-intro {
         max-width: 70%;
-        font-size: 9rem;
+        font-size: 10rem;
         font-weight: 400;
         text-shadow: 10px 10px 30px #000;
         margin: 0.5rem 0;
@@ -955,7 +1090,7 @@ footer {
     }
 
     .hero-button {
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
 
     .button {
